@@ -2,43 +2,42 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>welcome NexSeed Okinawa</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <title>課題welcome NexSeed Okinawa</title>
+  <link rel="stylesheet" href="style/foundation/style.css">
 </head>
 <body>
   <!-- header -->
-  <header id="fixed">
+  <header id="fixed" class="header">
     <!-- header左側 -->
-    <div class="icon">
+    <div class="icon header__icon">
       <img src="img/seedkun.png" alt="Seedkun" width="60" height="60">
-       <span class="name"><strong>Seed</strong>Kun</span>
+      <span class="name"><strong>Seed</strong>Kun</span>
     </div>
     <!-- header右側 -->
-    <ul class="header-right">
+    <ul class="header-right header--right">
       <li>新規登録</li>
       <li>ログイン</li>
-     </ul>
+    </ul>
   </header>
   <!--/ headerここまで -->
 
   <main>
     <!-- welcome -->
-    <section class="welcome" id="margin-for-fixed">
-      <h1 class="title">Welcome to NexSeed Okinawa</h1>
-        <ul class="guideline">
-          <li>Be Athlete</li>
-          <li>Go World</li>
-          <li>Enjoy Everything</li>
-        </ul>
+    <section class="welcome mainbg" id="margin-for-fixed">
+      <h1 class="title mainbg__title">Welcome to NexSeed Okinawa</h1>
+      <ul class="mainbg__guideline">
+        <li class="mainbg__guideline__comment">Be Athlete</li>
+        <li class="mainbg__guideline__comment">Go World</li>
+        <li class="mainbg__guideline__comment">Enjoy Everything</li>
+      </ul>
       <div class="btn-group">
-          <button class="btn register">新規登録</button>
-          <button class="btn login">ログイン</button>
+        <button class="btn register">新規登録</button>
+        <button class="btn login">ログイン</button>
       </div>
     </section>
-      <!--/ welcomeここまで -->
- 
-      <!-- curriculum -->
+    <!--/ welcomeここまで -->
+
+    <!-- curriculum -->
     <section class="curriculum">
       <h2 class="sub-title">NexSeed Life</h2>
       <ul class="img-box">
@@ -66,13 +65,13 @@
       <div class="form">
         <!-- 左側のフォーム -->
         <div class="form-left">
-          <label>名前<input  class="name" type="text" placeholder="山田 太郎"></label>
+          <label>名前<input class="name" type="text" placeholder="山田 太郎"></label>
           <label>メールアドレス<input class="email" type="email" placeholder="yamada@nexseed.net"></label>
         </div>
         <!-- 右側のフォーム -->
         <label>
           お問い合わせ内容
-          <textarea  class="inquiry" name="inquiry" placeholder="300文字以内で"></textarea>
+          <textarea class="inquiry" name="inquiry" placeholder="300文字以内で"></textarea>
         </label>
       </div>
       <button type="submit">submit</button>
@@ -80,8 +79,8 @@
   </aside>
   <!--/ contactここまで -->
 
-   <!-- footer -->
-   <footer>
+  <!-- footer -->
+  <footer>
     <!-- footer左側 -->
     <div class="icon">
       <img src="img/seedkun.png" alt="Seedkun" width="60" height="60">

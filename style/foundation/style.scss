@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@import '_reset.scss';
+@import '../layout/header';
+@import '../layout/main';
+@import '../layout/footer';
+@import '../object/component/btn';
+
+
+$font-family: 'YuGothic','Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック','sans-serif';
+
+body {
+  color: #333333;
+  font-size: 16px;
+  font-family: $font-family;
+}

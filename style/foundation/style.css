@@ -1,0 +1,413 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs
+*/
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/* header固定 */
+/*
+ 本来はidで実施する必要はない
+ 今回はidの使い方も覚えるため実施
+*/
+#fixed {
+  position: fixed;
+  width: 100%;
+  margin-top: -70px;
+}
+
+#margin-for-fixed {
+  margin-top: 70px;
+}
+
+/* header固定ここまで */
+/* header */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #1dace0;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+.header__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 80px;
+}
+
+.header--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 80px;
+}
+
+.icon img {
+  height: 60px;
+}
+
+.icon .name strong {
+  color: #eae51f;
+}
+
+.header-right li:first-child {
+  margin-right: 20px;
+}
+
+/* welcome */
+.welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background: url(../../img/background1.jpg) no-repeat center center/cover;
+  height: 500px;
+  color: #fff;
+}
+
+.mainbg {
+  font-size: 64px;
+}
+
+.mainbg__guideline {
+  margin-top: 50px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.mainbg__guideline__comment {
+  margin-top: 16px;
+}
+
+.mainbg__guideline__comment:first-child {
+  margin-top: 0px;
+}
+
+/* curriculum */
+.curriculum {
+  margin-top: 50px;
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 36px;
+}
+
+.img-box {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.img-box li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 60px;
+  text-align: center;
+}
+
+.img-box li img {
+  width: 300px;
+  height: auto;
+}
+
+.img-box li span {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.img-box li:last-child {
+  margin-right: 0;
+}
+
+/* curriculumここまで */
+/* contact */
+.contact {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 50px;
+  background-color: #ebf4f5;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 350px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .form {
+  margin: 50px 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .form label {
+  display: block;
+  text-align: left;
+}
+
+.contact .form label .name {
+  margin-bottom: 20px;
+}
+
+.contact .form label .inquiry {
+  display: block;
+  margin-top: 10px;
+  height: 120px;
+  width: 400px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+.form .name,
+.form .email {
+  margin-top: 10px;
+  display: block;
+  height: 50px;
+  width: 400px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+.form-left {
+  margin-right: 50px;
+}
+
+.contact button {
+  background-color: #1dace0;
+  color: #fff;
+  border: 3px solid #1dace0;
+  border-radius: 10px;
+  font-size: 24px;
+  padding: 15px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  /* transition-duration: .5s; */
+}
+
+.contact button button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #1dace0;
+}
+
+/* contactここまで */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #233f51;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 80px;
+}
+
+footer .footer-right {
+  margin-right: 80px;
+}
+
+/* footerここまで */
+.btn-group {
+  margin-top: 60px;
+}
+
+.btn {
+  height: 55px;
+  width: 170px;
+  margin-left: 120px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  font-size: 28px;
+  border-radius: 10px;
+}
+
+.btn:first-child {
+  margin-left: 0;
+}
+
+.register {
+  background-color: rgba(29, 172, 224, 0.5);
+  border: 3px solid rgba(29, 172, 224, 0.3);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/* ボタンの透過はスケルトン */
+.register:hover {
+  background-color: #1dace0;
+}
+
+.login {
+  background-color: rgba(236, 227, 35, 0.5);
+  border: 3px solid rgba(236, 227, 35, 0.3);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.login:hover {
+  background-color: #ece323;
+}
+
+body {
+  color: #333333;
+  font-size: 16px;
+  font-family: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", "Meiryo", "ＭＳ ゴシック", "sans-serif";
+}
+/*# sourceMappingURL=style.css.map */
